@@ -22,7 +22,11 @@ while True:
 
     # Display the image with the faces spotted
     cv2.imshow('Face Detector', frame)
-    cv2.waitKey(1)
+    key = cv2.waitKey(1)
+    
+    # Stop if Q key is pressed
+    if key == 81 or key == 113:
+        break
 
 
 
